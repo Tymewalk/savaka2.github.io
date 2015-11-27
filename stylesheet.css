@@ -18,12 +18,10 @@ a {
 
 a:hover {
 	color: white;
-	text-decoration: none;
 }
 
 a:active {
-	color: #30cbff;
-	text-decoration: underline;
+	color: #2499bf;
 }
 
 #lemons {

@@ -27,3 +27,7 @@ a:active {
 #lemons {
 	color: black;
 }
+
+.horizontal {
+	float: left;
+}

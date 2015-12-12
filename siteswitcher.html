@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="savaka-style.css">
+		<title>Site Switcher - Savaka's GitHub Page</title>
+		<script>
+			function showMore() {
+				if (document.getElementById('morepages').style.display == 'initial') {
+					document.getElementById('morepages').style.display = 'none';
+				} else {
+					document.getElementById('morepages').style.display = 'initial';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<a href="index.html"><img src="images/savakafull-small.PNG"></a>
+		<h1>Switch Site</h1>
+		<p>GitHub projects:</p>
+		<ul>
+			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
+			<li><a href="ext-open/index.html">Ext Open</a></li>
+		</ul>
+		<p><a href="javascript:showMore();">Show more</a></p>
+		<div id="morepages" style="display:none">
+			<ul>
+				<li><a href="sbx-files/index.html">SBX Files</a></li>
+				<li><a href="something/index.html">Something</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -11,10 +11,20 @@
 					document.getElementById('morepages').style.display = 'initial';
 				}
 			}
+			function switchSite() {
+				if (document.getElementById('siteswitcher').style.display == 'initial') {
+					document.getElementById('siteswitcher').style.display = 'none';
+				} else {
+					document.getElementById('siteswitcher').style.display = 'initial';
+				}
+			}
 		</script>
 	</head>
 	<body>
-		<a href="index.html"><img src="images/savakafull-small.PNG"></a>
+		<div id="header">
+		<a href="index.html"><img src="images/savakafull-small.PNG"></a><a href="javascript:switchSite();">Switch Site</a>
+		</div>
+		<div id="siteswitcher" style="display:none;">
 		<h1>Switch Site</h1>
 		<p>GitHub projects:</p>
 		<ul>
@@ -27,6 +37,10 @@
 				<li><a href="sbx-files/index.html">SBX Files</a></li>
 				<li><a href="something/index.html">Something</a></li>
 			</ul>
+		</div>
+		</div>
+		<div id="main">
+		<!-- insert main content -->
 		</div>
 	</body>
 </html>

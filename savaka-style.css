@@ -28,6 +28,10 @@ a:active {
 	color: #2499bf;
 }
 
+.lvl1 {
+	list-style-type: disc;
+}
+
 .lvl2 {
 	list-style-type: circle;
 }

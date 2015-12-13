@@ -1,13 +1,17 @@
 @font-face {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI Light";
 	src: url(segoe-ui-light.ttf);
-	font-weight: lighter;
+}
+
+@font-face {
+	font-family: "Segoe UI";
+	src: url(segoe-ui.ttf);
 }
 
 body{
 	background-color: black;
 	color: #bbbbbb;
-	font-family: "Segoe UI", sans-serif;
+	font-family: "Segoe UI Light", sans-serif;
 	font-weight: lighter;
 }
 
@@ -30,4 +34,8 @@ a:active {
 
 .lvl3 {
 	list-style-type: square;
+}
+
+.b {
+	font-family: "Segoe UI", sans-serif;
 }

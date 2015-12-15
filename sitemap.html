@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="savaka-style.css">
 		<title>Savaka's GitHub Page</title>
+		<script src="siteswitcherscript.js"></script>
 		<script>
 			function swapFiles() {
 				if (document.getElementById('fileTree').style.display == 'initial') {
@@ -11,22 +12,6 @@
 				} else {
 					document.getElementById('pageTree').style.display = 'none';
 					document.getElementById('fileTree').style.display = 'initial';
-				}
-			}
-			function showMore() {
-				if (document.getElementById('morepages').style.display == 'initial') {
-					document.getElementById('morepages').style.display = 'none';
-				} else {
-					document.getElementById('morepages').style.display = 'initial';
-				}
-			}
-			function switchSite() {
-				if (document.getElementById('siteswitcher').style.display == 'initial') {
-					document.getElementById('siteswitcher').style.display = 'none';
-					document.getElementById('main').style.display = 'initial';
-				} else {
-					document.getElementById('main').style.display = 'none';
-					document.getElementById('siteswitcher').style.display = 'initial';
 				}
 			}
 		</script>

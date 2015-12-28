@@ -43,3 +43,11 @@ a:active {
 .b {
 	font-family: "Segoe UI", sans-serif;
 }
+
+thead {
+  background-color: #202020;
+}
+
+tbody {
+  background-color: #101010;
+}

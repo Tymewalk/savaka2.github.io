@@ -3,176 +3,48 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="savaka-style.css">
 		<title>Sitemap - Savaka's GitHub Page</title>
-		<script src="siteswitcherscript.js"></script>
-		<script>
-			function swapFiles() {
-				if (document.getElementById('fileTree').style.display == 'initial') {
-					document.getElementById('fileTree').style.display = 'none';
-					document.getElementById('pageTree').style.display = 'initial';
-				} else {
-					document.getElementById('pageTree').style.display = 'none';
-					document.getElementById('fileTree').style.display = 'initial';
-				}
-			}
-		</script>
 	</head>
 	<body>
 		<div id="header">
-		<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <a href="index.html"><img src="images/home-button.png"></a><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
-		</div>
-		<div id="siteswitcher" style="display:none;">
-		<h1>Switch Site</h1>
-		<p>GitHub projects:</p>
-		<ul>
-			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
-			<li><a href="ext-open/index.html">Ext Open</a></li>
-		</ul>
-		<p><a href="javascript:showMore();">Show more</a></p>
-		<div id="morepages" style="display:none">
-			<ul>
-				<li><a href="sbx-files/index.html">SBX Files</a></li>
-				<li><a href="something/index.html">Something</a></li>
-			</ul>
-		</div>
-		<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
+		<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a>
 		</div>
 		<div id="main">
 		<h1>Sitemap</h1>
 		<p>No forks included</p>
-		<div id="pageTree">
-			<h2>Page map</h2>
-			<ul class="lvl1">
-				<li><span class="b">Home</span></li>
-				<ul class="lvl2">
-					<li><em><a href="404.html">404</a></em></li>
-					<li><a href="antikumquat.html">Savaka Antikumquat</a></li>
-					<li><a href="index.html"><span class="b">Home</span></a></li>
-					<li>Sitemap</li>
-					<li><a href="thing.html"><em>Thing</em></a></li>
-					<li><a href="xkcd-explainer.html">Xkcd Explainer</a></li>
-				</ul>
-				<li>Ext Open</li>
-				<ul class="lvl2">
-					<li><em><a href="ext-open/404.html">404</a></em></li>
-					<li><a href="ext-open/index.html"><span class="b">Home</span></a></li>
-					<li><a href="ext-open/install.html">Install</a></li>
-				</ul>
-				<li>SBX Files</li>
-				<ul class="lvl2">
-					<li><em><a href="sbx-files/404.html">404</a></em></li>
-					<li><a href="sbx-files/index.html"><span class="b">Home</span></a></li>
-				</ul>
-				<li>Scratch Extensions</li>
-				<ul class="lvl2">
-					<li><em><a href="scratch-extensions/404.html">404</a></em></li>
-					<li><a href="scratch-extensions/index.html"><span class="b">Home</span></a></li>
-				</ul>
-				<li>Something</li>
-				<ul class="lvl2">
-					<li><em><a href="something/404.html">404</a></em></li>
-					<li><a href="something/index.html"><span class="b">Home</span></a></li>
-					<li><a href="something/template.html">Page Template</a></li>
-					<li><a href="something/woahman.html">Thingy</a></li>
-				</ul>
+		<ul class="lvl1">
+			<li><span class="b">Home</span></li>
+			<ul class="lvl2">
+				<li><em><a href="404.html">404</a></em></li>
+				<li><a href="antikumquat.html">Savaka Antikumquat</a></li>
+				<li><a href="index.html"><span class="b">Home</span></a></li>
+				<li>Sitemap</li>
+				<li><a href="thing.html"><em>Thing</em></a></li>
+				<li><a href="xkcd-explainer.html">Xkcd Explainer</a></li>
 			</ul>
-			<p><a href="javascript:swapFiles();">Show advanced file map</a></p>
-		</div>
-		<div id="fileTree" style="display:none;">
-			<h2>File map</h2>
-			<p>Git files and markdown files excluded</p>
-			<ul class="lvl1">
-				<li>savaka2.github.io</li>
-				<ul class="lvl2">
-					<li>images</li>
-					<ul class="lvl3">
-						<li><a href="images/404.png">404.png</a></li>
-						<li><a href="images/gh.png">gh.png</a></li>
-						<li><a href="images/lemons-are-good.png">lemons-are-good.png</a></li>
-						<li><a href="images/savakafull-small.png">savakafull-small.png</a></li>
-						<li><a href="images/scratch.png">scratch.png</a></li>
-					</ul>
-					<li>lfs</li>
-					<ul class="lvl3">
-						<li><a href="lfs/rick-lf.mp4">rick-lf.mp4</a></li>
-					</ul>
-					<li>test-folder</li>
-					<ul class="lvl3">
-						<li><a href="test-folder/extension-on-user-page.js">extension-on-user-page.js</a></li>
-					</ul>
-					<li><a href="404.html">404.html</a></li>
-					<li><a href="antikumquat.html">antikumquat.html</a></li>
-					<li><a href="crossdomain.xml">crossdomain.xml</a></li>
-					<li><a href="index.html"><span class="b">index.html</span></a></li>
-					<li><a href="savaka-style.css">savaka-style.css</a></li>
-					<li><a href="segoe-ui.tff">segoe-ui.tff</a></li>
-					<li><a href="segoe-ui-light.tff">segoe-ui-light.tff</a></li>
-					<li>sitemap.html</li>
-					<li><a href="siteswitcherscript.js">siteswitcherscript.js</a></li>
-					<li><a href="thing.html">thing.html</a></li>
-					<li><a href="xkcd-explainer.html">xkcd-explainer.html</a></li>
-					<li>ext-open</li>
-					<ul class="lvl3">
-						<li>test-folder</li>
-						<ul class="lvl1">
-							<li><a href="ext-open/test-folder/extension-on-project-page.js">extension-on-project-page.js</a></li>
-						</ul>
-						<li><a href="ext-open/404.html">404.html</a></li>
-						<li><a href="ext-open/ext-open.js">ext-open.js</a></li>
-						<li><a href="ext-open/ext-open-+.js">ext-open-+.js</a></li>
-						<li><a href="ext-open/index.html"><span class="b">index.html</span></a></li>
-						<li><a href="ext-open/install.html">install.html</a></li>
-					</ul>
-					<li>sbx-files</li>
-					<ul class="lvl3">
-						<li><a href="sbx-files/404.html">404.html</a></li>
-						<li><a href="sbx-files/index.html"><span class="b">index.html</span></a></li>
-					</ul>
-					<li>scratch-extensions</li>
-					<ul class="lvl3">
-						<li>demos</li>
-						<ul class="lvl1">
-							<li><a href="scratch-extensions/demos/convert-to-boolean.sbx">convert-to-boolean.sbx</a></li>
-							<li><a href="scratch-extensions/demos/debugging.sbx">debugging.sbx</a></li>
-							<li><a href="scratch-extensions/demos/hash.sbx">hash.sbx</a></li>
-							<li><a href="scratch-extensions/demos/javascript.sbx">javascript.sbx</a></li>
-							<li><a href="scratch-extensions/demos/javascript-dialogs.sbx">javascript-dialogs.sbx</a></li>
-							<li><a href="scratch-extensions/demos/link-opener.sbx">link-opener.sbx</a></li>
-							<li><a href="scratch-extensions/demos/logic.sbx">logic.sbx</a></li>
-							<li><a href="scratch-extensions/demos/run-reporters.sbx">run-reporters.sbx</a></li>
-							<li><a href="scratch-extensions/demos/scratch-api.sbx">scratch-api.sbx</a></li>
-							<li><a href="scratch-extensions/demos/text-stuff.sbx">test-stuff.sbx</a></li>
-						</ul>
-						<li>images</li>
-						<ul class="lvl1">
-							<li><em>Contents of this directory excluded so I don't have to type all that</em></li>
-						</ul>
-						<li><a href="scratch-extensions/404.html">404.html</a></li>
-						<li><a href="scratch-extensions/convert-to-boolean.js">convert-to-boolean.js</a></li>
-						<li><a href="scratch-extensions/debugging.js">debugging.js</a></li>
-						<li><a href="scratch-extensions/hash.js">hash.js</a></li>
-						<li><a href="scratch-extensions/index.html"><span class="b">index.html</span></a></li>
-						<li><a href="scratch-extensions/javascript.js">javascript.js</a></li>
-						<li><a href="scratch-extensions/javascript-dialogs.js">javascript-dialogs.js</a></li>
-						<li><a href="scratch-extensions/link-opener.js">link-opener.js</a></li>
-						<li><a href="scratch-extensions/logic.js">logic.js</a></li>
-						<li><a href="scratch-extensions/more-math.js">more-math.js</a></li>
-						<li><a href="scratch-extensions/more-operators.js">more-operators.js</a></li>
-						<li><a href="scratch-extensions/run-reporters.js">run-reporters.js</a></li>
-						<li><a href="scratch-extensions/scratch-api.js">scratch-api.js</a></li>
-						<li><a href="scratch-extensions/text-stuff.js">text-stuff.js</a></li>
-					</ul>
-					<li>something</li>
-					<ul class="lvl3">
-						<li><a href="something/404.html">404.html</a></li>
-						<li><a href="something/design-mode.js">design-mode.js</a></li>
-						<li><a href="something/index.html"><span class="b">index.html</span></a></li>
-						<li><a href="something/template.html">template.html</a></li>
-						<li><a href="something/woahman.html">woahman.html</a></li>
-					</ul>
-				</ul>
+			<li>Ext Open</li>
+			<ul class="lvl2">
+				<li><em><a href="ext-open/404.html">404</a></em></li>
+				<li><a href="ext-open/index.html"><span class="b">Home</span></a></li>
+				<li><a href="ext-open/install.html">Install</a></li>
 			</ul>
-			<p><a href="javascript:swapFiles();">Show simple webpage map</a></p>
-		</div>
+			<li>SBX Files</li>
+			<ul class="lvl2">
+				<li><em><a href="sbx-files/404.html">404</a></em></li>
+				<li><a href="sbx-files/index.html"><span class="b">Home</span></a></li>
+			</ul>
+			<li>Scratch Extensions</li>
+			<ul class="lvl2">
+				<li><em><a href="scratch-extensions/404.html">404</a></em></li>
+				<li><a href="scratch-extensions/index.html"><span class="b">Home</span></a></li>
+			</ul>
+			<li>Something</li>
+			<ul class="lvl2">
+				<li><em><a href="something/404.html">404</a></em></li>
+				<li><a href="something/index.html"><span class="b">Home</span></a></li>
+				<li><a href="something/template.html">Page Template</a></li>
+				<li><a href="something/woahman.html">Thingy</a></li>
+			</ul>
+		</ul>
 		</div>
 	</body>
 </html>

@@ -51,3 +51,11 @@ thead {
 tbody {
   background-color: #101010;
 }
+
+th {
+	padding: 2px;
+}
+
+td {
+	padding: 2px;
+}

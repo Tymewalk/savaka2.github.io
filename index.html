@@ -5,13 +5,6 @@
 		<title>Savaka's GitHub Page</title>
 		<script src="siteswitcherscript.js"></script>
 		<script>
-			function showScripts() {
-				if (document.getElementById('userscripts').style.display == 'initial') {
-					document.getElementById('userscripts').style.display = 'none';
-				} else {
-					document.getElementById('userscripts').style.display = 'initial';
-				}
-			}
 			function showTable() {
 				if (document.getElementById('repoTable').style.display == 'initial') {
 					document.getElementById('repoTable').style.display = 'none';
@@ -56,15 +49,7 @@
 			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
 			<li><a href="ext-open/index.html">Ext Open</a></li>
 		</ul>
-		<p><a href="xkcd-explainer.html">xkcd explainer mini-bookmarklet</a></p>
-		<p><a href="javascript:showScripts();">Userscripts</a></p>
-		<div id="userscripts" style="display:none">
-		Click link to install userscript:
-		<ul>
-			<li><a href="userscripts/ScratchX_for_experienced_people.user.js">ScratchX for experienced people</a> - Adds link to start ScratchX without an extension, adds button to go to Unofficial Extensions Directory, hides "Scratch vs ScratchX" and "Who Uses ScratchX" sections</li>
-			<li><a href="userscripts/rickroll.user.js">rickroll</a> - Rickrolls all links</li>
-		</ul>
-		</div>
+		<p><a href="bookmarklets-and-userscripts.html">Bookmarklets and userscripts</a></p>
 		<p><a href="javascript:showTable();">Show complete repo link table</a></p>
 		<div id="repoTable" style="display:none">
 			<table>

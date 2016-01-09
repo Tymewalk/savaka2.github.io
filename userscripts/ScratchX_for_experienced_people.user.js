@@ -13,7 +13,7 @@ var bottomRow = bottomRows[0];
 var divs = bottomRow.getElementsByTagName('div');
 var thatDiv = divs[0];
 var item = document.createElement('a');
-item.href = 'http://thepuzzlegame.github.io'
+item.href = 'http://savaka2.github.io/scratch-extensions-directory'
 item.innerHTML = '<button>Extensions Directory</button>';
 thatDiv.appendChild(item);
 

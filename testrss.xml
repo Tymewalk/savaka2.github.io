@@ -5,6 +5,13 @@
 <link>http://savaka2.github.io/</link>
 <description>This is a test</description>
 <item>
+<title>Bing</title>
+<link>http://bing.com/</link>
+<guid>http://bing.com/</guid>
+<pubDate>Tue, 12 Jan 2016 03:18:34 EST</pubDate>
+<description>It's Bing!!!</description>
+</item>
+<item>
 <title>RSS documentation</title>
 <link>http://cyber.law.harvard.edu/rss/rss.html</link>
 <guid>http://cyber.law.harvard.edu/rss/rss.html</guid>

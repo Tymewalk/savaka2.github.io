@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Test RSS</title>
+<link>http://savaka2.github.io/</link>
+<description>This is a test</description>
+<item>
+<title>RSS documentation</title>
+<link>http://cyber.law.harvard.edu/rss/rss.html</link>
+<guid>http://cyber.law.harvard.edu/rss/rss.html</guid>
+<pubDate>Tue, 12 Jan 2016 03:14:12 EST</pubDate>
+<description>Hey look it's the doc!!</description>
+</item>
+</channel>
+</rss>

@@ -11,7 +11,7 @@
 				var currentElement;
 				for (i = 1; i <= 2; i++) { // 2 = number of questions
 					answered = false;
-					for (j = 1; j <= 4; j++) { // 4 = answer choices per question
+					for (j = 1; j <= 4; j++) {
 						currentElement = document.getElementById('q' + i + 'a' + j);
 						if (currentElement.checked) {
 							answered = true;
@@ -34,10 +34,10 @@
 						if (currentElement.checked) {
 							score++;
 							currentElement = document.getElementById(correctIds[i].substring(0,2));
-							currentElement.style.color = 'green'; // 'green' is correct answer color, replace with hex color to be more specific
+							currentElement.style.color = 'green';
 						} else {
 							currentElement = document.getElementById(correctIds[i].substring(0,2));
-							currentElement.style.color = 'red';// 'red' is incorrect answer color, replace with hex color to be more specific
+							currentElement.style.color = 'red';
 						}
 					}
 					var labels = document.getElementsByClassName('correct-label');
@@ -75,15 +75,15 @@
 		<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
 		</div>
 		<div id="main">
-		<div> <!-- innerHTML of span is question, innerHTML of label is answer choice -->
-			<span id="q1" style="">1. Answer 3 is correct</span><br/>  <!-- "q1" = question 1 -->
-			<input type="radio" name="q1" value="a1" id="q1a1" class="a"><label for="q1a1">A1</label><br/> <!-- "q1" = question 1, "a1" = answer choice 1, "q1a1" = question 1 answer choice 1 -->
-			<input type="radio" name="q1" value="a2" id="q1a2" class="a"><label for="q1a2">A2</label><br/> <!-- "q1" = question 1, "a2" = answer choice 2, "q1a2" = question 1 answer choice 2 -->
-			<input type="radio" name="q1" value="a3" id="q1a3" class="a"><label for="q1a3" class="correct-label">A3</label><br/> <!-- "q1" = question 1, "a3" = answer choice 3, "q1a3" = question 1 answer choice 3, "correct-label" = label of correct answer -->
-			<input type="radio" name="q1" value="a4" id="q1a4" class="a"><label for="q1a4">A4</label> <!-- "q1" = question 1, "a4" = answer choice 4, "q1a4" = question 1 answer choice 4 -->
-		</div> <!-- copy the div for more questions, or copy the next div so you don't also copy all the comments -->
-		<div> <!-- no comments on this div, see comments on previous div -->
-			<span id="q2" style="">2. Answer 1 is correct</span><br/>
+		<div>
+			<span id="q1" style="">1. Which OS do I not have any device that runs it?</span><br/>
+			<input type="radio" name="q1" value="a1" id="q1a1" class="a"><label for="q1a1">Chrome OS</label><br/>
+			<input type="radio" name="q1" value="a2" id="q1a2" class="a"><label for="q1a2">Windows 10</label><br/>
+			<input type="radio" name="q1" value="a3" id="q1a3" class="a"><label for="q1a3" class="correct-label">Mac OS X<</label><br/>
+			<input type="radio" name="q1" value="a4" id="q1a4" class="a"><label for="q1a4">Windows RT</label>
+		</div>
+		<div>
+			<span id="q2" style="">2. Question 2</span><br/>
 			<input type="radio" name="q2" value="a1" id="q2a1" class="a"><label for="q2a1" class="correct-label">A1</label><br/>
 			<input type="radio" name="q2" value="a2" id="q2a2" class="a"><label for="q2a2">A2</label><br/>
 			<input type="radio" name="q2" value="a3" id="q2a3" class="a"><label for="q2a3">A3</label><br/>

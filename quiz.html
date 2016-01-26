@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="savaka-style.css">
+		<title>Savaka Antikumquat - Savaka's GitHub Page</title>
+		<script src="siteswitcherscript.js"></script>
+		<script>
+			function answers() {
+				var allanswered = true;
+				var answered = false;
+				var currentElement;
+				for (i = 1; i <= 2; i++) { // 2 = number of questions
+					answered = false;
+					for (j = 1; j <= 4; j++) { // 4 = answer choices per question
+						currentElement = document.getElementById('q' + i + 'a' + j);
+						if (currentElement.checked) {
+							answered = true;
+						}
+					}
+					if (!answered) {
+						allanswered = false;
+					}
+				}
+				if (allanswered) {
+					var ans = document.getElementsByClassName('a');
+					for (i = 0; i < ans.length; i++) {
+						currentElement = ans[i];
+						currentElement.disabled = true;
+					}
+					var score = 0;
+					correctIds = ['q1a3', 'q2a1']; // ids of correct answer inputs
+					for (i = 0; i < correctIds.length; i++) {
+						currentElement = document.getElementById(correctIds[i]);
+						if (currentElement.checked) {
+							score++;
+							currentElement = document.getElementById(correctIds[i].substring(0,2));
+							currentElement.style.color = 'green'; // 'green' is correct answer color, replace with hex color to be more specific
+						} else {
+							currentElement = document.getElementById(correctIds[i].substring(0,2));
+							currentElement.style.color = 'red';// 'red' is incorrect answer color, replace with hex color to be more specific
+						}
+					}
+					var labels = document.getElementsByClassName('correct-label');
+					for (i = 0; i < labels.length; i++) {
+						currentElement = labels[i];
+						currentElement.innerHTML += ' ✓';
+					}
+					currentElement = document.getElementById('result');
+					currentElement.innerHTML = 'You scored ' + score.toString() + '/2'; // '/2' = out of 2 questions
+				} else {
+					alert('You didn\'t answer everything');
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="header">
+		<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <a href="index.html"><img src="images/home-button.png"></a><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
+		</div>
+		<div id="siteswitcher" style="display:none;">
+		<h1>Switch Site</h1>
+		<p>GitHub projects:</p>
+		<ul>
+			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
+			<li><a href="ext-open/index.html">Ext Open</a></li>
+		</ul>
+		<p><a href="javascript:showMore();">Show more</a></p>
+		<div id="morepages" style="display:none">
+			<ul>
+				<li><a href="sbx-files/index.html">SBX Files</a></li>
+				<li><a href="something/index.html">Something</a></li>
+				<li><a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a></li>
+			</ul>
+		</div>
+		<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
+		</div>
+		<div id="main">
+		<div> <!-- innerHTML of span is question, innerHTML of label is answer choice -->
+			<span id="q1" style="">1. Answer 3 is correct</span><br/>  <!-- "q1" = question 1 -->
+			<input type="radio" name="q1" value="a1" id="q1a1" class="a"><label for="q1a1">A1</label><br/> <!-- "q1" = question 1, "a1" = answer choice 1, "q1a1" = question 1 answer choice 1 -->
+			<input type="radio" name="q1" value="a2" id="q1a2" class="a"><label for="q1a2">A2</label><br/> <!-- "q1" = question 1, "a2" = answer choice 2, "q1a2" = question 1 answer choice 2 -->
+			<input type="radio" name="q1" value="a3" id="q1a3" class="a"><label for="q1a3" class="correct-label">A3</label><br/> <!-- "q1" = question 1, "a3" = answer choice 3, "q1a3" = question 1 answer choice 3, "correct-label" = label of correct answer -->
+			<input type="radio" name="q1" value="a4" id="q1a4" class="a"><label for="q1a4">A4</label> <!-- "q1" = question 1, "a4" = answer choice 4, "q1a4" = question 1 answer choice 4 -->
+		</div> <!-- copy the div for more questions, or copy the next div so you don't also copy all the comments -->
+		<div> <!-- no comments on this div, see comments on previous div -->
+			<span id="q2" style="">2. Answer 1 is correct</span><br/>
+			<input type="radio" name="q2" value="a1" id="q2a1" class="a"><label for="q2a1" class="correct-label">A1</label><br/>
+			<input type="radio" name="q2" value="a2" id="q2a2" class="a"><label for="q2a2">A2</label><br/>
+			<input type="radio" name="q2" value="a3" id="q2a3" class="a"><label for="q2a3">A3</label><br/>
+			<input type="radio" name="q2" value="a4" id="q2a4" class="a"><label for="q2a4">A4</label>
+		</div>
+		<button onclick="answers();">Done</button>
+		<span id="result"></span>
+		</div>
+	</body>
+</html>

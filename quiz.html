@@ -28,7 +28,7 @@
 						currentElement.disabled = true;
 					}
 					var score = 0;
-					correctIds = ['q1a3', 'q2a1']; // ids of correct answer inputs
+					correctIds = ['q1a3', 'q2a3']; // ids of correct answer inputs
 					for (i = 0; i < correctIds.length; i++) {
 						currentElement = document.getElementById(correctIds[i]);
 						if (currentElement.checked) {
@@ -85,11 +85,11 @@
 			<input type="radio" name="q1" value="a4" id="q1a4" class="a"><label for="q1a4">Windows RT</label>
 		</div>
 		<div>
-			<span id="q2" style="">2. Question 2</span><br/>
-			<input type="radio" name="q2" value="a1" id="q2a1" class="a"><label for="q2a1" class="correct-label">A1</label><br/>
-			<input type="radio" name="q2" value="a2" id="q2a2" class="a"><label for="q2a2">A2</label><br/>
-			<input type="radio" name="q2" value="a3" id="q2a3" class="a"><label for="q2a3">A3</label><br/>
-			<input type="radio" name="q2" value="a4" id="q2a4" class="a"><label for="q2a4">A4</label>
+			<span id="q2" style="">2. How many Scratch accounts do I have?</span><br/>
+			<input type="radio" name="q2" value="a1" id="q2a1" class="a"><label for="q2a1">1</label><br/>
+			<input type="radio" name="q2" value="a2" id="q2a2" class="a"><label for="q2a2">2</label><br/>
+			<input type="radio" name="q2" value="a3" id="q2a3" class="a"><label for="q2a3" class="correct-label">3</label><br/>
+			<input type="radio" name="q2" value="a4" id="q2a4" class="a"><label for="q2a4">4</label>
 		</div>
 		<button onclick="answers();">Done</button>
 		<span id="result"></span>

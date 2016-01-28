@@ -9,7 +9,7 @@
 				var allanswered = true;
 				var answered = false;
 				var currentElement;
-				for (i = 1; i <= 6; i++) { // 2 = number of questions
+				for (i = 1; i <= 8; i++) { // 2 = number of questions
 					answered = false;
 					for (j = 1; j <= 4; j++) {
 						currentElement = document.getElementById('q' + i + 'a' + j);
@@ -28,7 +28,7 @@
 						currentElement.disabled = true;
 					}
 					var score = 0;
-					correctIds = ['q1a3', 'q2a3', 'q3a2', 'q4a3', 'q5a2', 'q6a4']; // ids of correct answer inputs
+					correctIds = ['q1a3', 'q2a3', 'q3a2', 'q4a3', 'q5a2', 'q6a4', 'q7a4', 'q8a1']; // ids of correct answer inputs
 					for (i = 0; i < correctIds.length; i++) {
 						currentElement = document.getElementById(correctIds[i]);
 						if (currentElement.checked) {
@@ -46,7 +46,7 @@
 						currentElement.innerHTML += ' ✓';
 					}
 					currentElement = document.getElementById('result');
-					currentElement.innerHTML = 'You scored ' + score.toString() + '/6'; // '/2' = out of 2 questions
+					currentElement.innerHTML = 'You scored ' + score.toString() + '/8'; // '/2' = out of 2 questions
 				} else {
 					alert('You didn\'t answer everything');
 				}
@@ -118,6 +118,20 @@
 			<input type="radio" name="q6" value="a2" id="q6a2" class="a"><label for="q6a2">C</label><br/>
 			<input type="radio" name="q6" value="a3" id="q6a3" class="a"><label for="q6a3">Python</label><br/>
 			<input type="radio" name="q6" value="a4" id="q6a4" class="a"><label for="q6a4" class="correct-label">Java</label>
+		</div>
+		<div>
+			<span id="q7" style="">7. How many times have I changed my Scratch picture?</span><br/>
+			<input type="radio" name="q7" value="a1" id="q7a1" class="a"><label for="q7a1">0</label><br/>
+			<input type="radio" name="q7" value="a2" id="q7a2" class="a"><label for="q7a2">1</label><br/>
+			<input type="radio" name="q7" value="a3" id="q7a3" class="a"><label for="q7a3">2</label><br/>
+			<input type="radio" name="q7" value="a4" id="q7a4" class="a"><label for="q7a4" class="correct-label">3</label>
+		</div>
+		<div>
+			<span id="q8" style="">8. Which text editor do I use?</span><br/>
+			<input type="radio" name="q8" value="a1" id="q8a1" class="a"><label for="q8a1" class="correct-label">Notepad++</label><br/>
+			<input type="radio" name="q8" value="a2" id="q8a2" class="a"><label for="q8a2">Sublime Text</label><br/>
+			<input type="radio" name="q8" value="a3" id="q8a3" class="a"><label for="q8a3">Vim</label><br/>
+			<input type="radio" name="q8" value="a4" id="q8a4" class="a"><label for="q8a4">Notepad</label>
 		</div>
 		<button onclick="answers();">Done</button>
 		<span id="result"></span>

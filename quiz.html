@@ -9,7 +9,7 @@
 				var allanswered = true;
 				var answered = false;
 				var currentElement;
-				for (i = 1; i <= 8; i++) { // 2 = number of questions
+				for (i = 1; i <= 10; i++) { // 2 = number of questions
 					answered = false;
 					for (j = 1; j <= 4; j++) {
 						currentElement = document.getElementById('q' + i + 'a' + j);
@@ -28,7 +28,7 @@
 						currentElement.disabled = true;
 					}
 					var score = 0;
-					correctIds = ['q1a3', 'q2a3', 'q3a2', 'q4a3', 'q5a2', 'q6a4', 'q7a4', 'q8a1']; // ids of correct answer inputs
+					correctIds = ['q1a3', 'q2a3', 'q3a2', 'q4a3', 'q5a2', 'q6a4', 'q7a4', 'q8a1', 'q9a4']; // ids of correct answer inputs
 					for (i = 0; i < correctIds.length; i++) {
 						currentElement = document.getElementById(correctIds[i]);
 						if (currentElement.checked) {
@@ -46,7 +46,7 @@
 						currentElement.innerHTML += ' ✓';
 					}
 					currentElement = document.getElementById('result');
-					currentElement.innerHTML = 'You scored ' + score.toString() + '/8'; // '/2' = out of 2 questions
+					currentElement.innerHTML = 'You scored ' + score.toString() + '/10'; // '/2' = out of 2 questions
 				} else {
 					alert('You didn\'t answer everything');
 				}
@@ -92,7 +92,7 @@
 			<input type="radio" name="q2" value="a4" id="q2a4" class="a"><label for="q2a4">4</label>
 		</div>
 		<div>
-			<span id="q3" style="">3. Which is the correct pronunciation of "coding"?</span><br/>
+			<span id="q3" style="">3. (not really about me) Which is the correct pronunciation of "coding"?</span><br/>
 			<input type="radio" name="q3" value="a1" id="q3a1" class="a"><label for="q3a1">/ˈkuːdɪŋ/</label><br/>
 			<input type="radio" name="q3" value="a2" id="q3a2" class="a"><label for="q3a2" class="correct-label">/ˈkoʊdɪŋ/</label><br/>
 			<input type="radio" name="q3" value="a3" id="q3a3" class="a"><label for="q3a3">/ˈkɑːdɪŋ/</label><br/>
@@ -132,6 +132,13 @@
 			<input type="radio" name="q8" value="a2" id="q8a2" class="a"><label for="q8a2">Sublime Text</label><br/>
 			<input type="radio" name="q8" value="a3" id="q8a3" class="a"><label for="q8a3">Vim</label><br/>
 			<input type="radio" name="q8" value="a4" id="q8a4" class="a"><label for="q8a4">Notepad</label>
+		</div>
+		<div>
+			<span id="q9" style="">9. which is not pinned to my taskbar?</span><br/>
+			<input type="radio" name="q9" value="a1" id="q9a1" class="a"><label for="q9a1">File Explorer</label><br/>
+			<input type="radio" name="q9" value="a2" id="q9a2" class="a"><label for="q9a2">Firefox</label><br/>
+			<input type="radio" name="q9" value="a3" id="q9a3" class="a"><label for="q9a3">GitHub Desktop</label><br/>
+			<input type="radio" name="q9" value="a4" id="q9a4" class="a"><label for="q9a4" class="correct-label">Skype</label>
 		</div>
 		<button onclick="answers();">Done</button>
 		<span id="result"></span>

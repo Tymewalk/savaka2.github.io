@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="savaka-style.css">
-		<title>Savaka's GitHub Page</title>
-		<script src="siteswitcherscript.js"></script>
-		<script>
-			function showTable() {
-				if (document.getElementById('repoTable').style.display == 'initial') {
-					document.getElementById('repoTable').style.display = 'none';
-				} else {
-					document.getElementById('repoTable').style.display = 'initial';
-				}
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="savaka-style.css">
+	<title>Savaka's GitHub Page</title>
+	<script src="siteswitcherscript.js"></script>
+	<script>
+		function showTable() {
+			if (document.getElementById('repoTable').style.display == 'initial') {
+				document.getElementById('repoTable').style.display = 'none';
+			} else {
+				document.getElementById('repoTable').style.display = 'initial';
 			}
-		</script>
-	</head>
-	<body>
-		<div id="header">
-		<img src="images/savakafull-small.PNG" style="display:inline;"><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <img src="images/home-button-selected.png"><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
-		</div>
-		<div id="siteswitcher" style="display:none;">
-		<h1>Switch Site</h1>
-		<p>GitHub projects:</p>
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+	<img src="images/savakafull-small.PNG" style="display:inline;"><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <img src="images/home-button-selected.png"><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
+	</div>
+	<div id="siteswitcher" style="display:none;">
+	<h1>Switch Site</h1>
+	<p>GitHub projects:</p>
+	<ul>
+		<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
+		<li><a href="ext-open/index.html">Ext Open</a></li>
+	</ul>
+	<p><a href="javascript:showMore();">Show more</a></p>
+	<div id="morepages" style="display:none">
 		<ul>
-			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
-			<li><a href="ext-open/index.html">Ext Open</a></li>
+			<li><a href="sbx-files/index.html">SBX Files</a></li>
+			<li><a href="something/index.html">Something</a></li>
+			<li><a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a></li>
 		</ul>
-		<p><a href="javascript:showMore();">Show more</a></p>
-		<div id="morepages" style="display:none">
-			<ul>
-				<li><a href="sbx-files/index.html">SBX Files</a></li>
-				<li><a href="something/index.html">Something</a></li>
-				<li><a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a></li>
-			</ul>
-		</div>
-		<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
-		</div>
-		<div id="main">
-		<p>Profiles:</p>
-		<ul>
-			<li><a href="https://scratch.mit.edu/users/savaka/">Scratch</a></li>
-			<li><a href="https://github.com/savaka2">GitHub</a></li>
-			<li><a href="https://scratch.mit.edu/users/akavas/">Scratch (test)</a></li>
-			<li><a href="http://steamcommunity.com/profiles/76561198048544605">Steam</a></li>
-			<li><a href="https://www.touchdevelop.com/app/jxyba">Touch Develop</a></li>
-		</ul>
-		<p>GitHub projects:</p>
-		<ul>
-			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
-			<li><a href="ext-open/index.html">Ext Open</a></li>
-		</ul>
-		<p><a href="bookmarklets-and-userscripts.html">Bookmarklets and userscripts</a></p>
-		<p><a href="javascript:showTable();">Show complete repo link table</a></p>
-		<div id="repoTable" style="display:none">
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Repo</th>
-						<th>Page</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>hello-world</td>
-						<td><a href="https://github.com/savaka2/hello-world">Repo</a></td>
-						<td><em>no page</em></td>
-					</tr>
-					<tr>
-						<td>scratch-extensions</td>
-						<td><a href="https://github.com/savaka2/scratch-extensions">Repo</a></td>
-						<td><a href="scratch-extensions/index.html">Page</a></td>
-					</tr>
-					<tr>
-						<td>savaka2.github.io</td>
-						<td><a href="https://github.com/savaka2/savaka2.github.io">Repo</a></td>
-						<td>here</td>
-					</tr>
-					<tr>
-						<td>ext-open</td>
-						<td><a href="https://github.com/savaka2/ext-open">Repo</a></td>
-						<td><a href="ext-open/index.html">Page</a></td>
-					</tr>
-					<tr>
-						<td>sbx-files</td>
-						<td><a href="https://github.com/savaka2/sbx-files">Repo</a></td>
-						<td><a href="sbx-files/index.html">Page</a></td>
-					</tr>
-					<tr>
-						<td>something</td>
-						<td><a href="https://github.com/savaka2/something">Repo</a></td>
-						<td><a href="something/index.html">Page</a></td>
-					</tr>
-					<tr>
-						<td>scratch-extensions-directory</td>
-						<td><a href="https://github.com/savaka2/scratch-extensions-directory">Repo</a></td>
-						<td><a href="scratch-extensions-directory/index.html">Page</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<p><a href="images/lemons-are-good.png" style="color:black;">lemons-are-good</a></p>
-		</div>
-	</body>
+	</div>
+	<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
+	</div>
+	<div id="main">
+	<p>Profiles:</p>
+	<ul>
+		<li><a href="https://scratch.mit.edu/users/savaka/">Scratch</a></li>
+		<li><a href="https://github.com/savaka2">GitHub</a></li>
+		<li><a href="https://scratch.mit.edu/users/akavas/">Scratch (test)</a></li>
+		<li><a href="http://steamcommunity.com/profiles/76561198048544605">Steam</a></li>
+		<li><a href="https://www.touchdevelop.com/app/jxyba">Touch Develop</a></li>
+	</ul>
+	<p>GitHub projects:</p>
+	<ul>
+		<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
+		<li><a href="ext-open/index.html">Ext Open</a></li>
+	</ul>
+	<p><a href="bookmarklets-and-userscripts.html">Bookmarklets and userscripts</a></p>
+	<p><a href="javascript:showTable();">Show complete repo link table</a></p>
+	<div id="repoTable" style="display:none">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Repo</th>
+					<th>Page</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>hello-world</td>
+					<td><a href="https://github.com/savaka2/hello-world">Repo</a></td>
+					<td><em>no page</em></td>
+				</tr>
+				<tr>
+					<td>scratch-extensions</td>
+					<td><a href="https://github.com/savaka2/scratch-extensions">Repo</a></td>
+					<td><a href="scratch-extensions/index.html">Page</a></td>
+				</tr>
+				<tr>
+					<td>savaka2.github.io</td>
+					<td><a href="https://github.com/savaka2/savaka2.github.io">Repo</a></td>
+					<td>here</td>
+				</tr>
+				<tr>
+					<td>ext-open</td>
+					<td><a href="https://github.com/savaka2/ext-open">Repo</a></td>
+					<td><a href="ext-open/index.html">Page</a></td>
+				</tr>
+				<tr>
+					<td>sbx-files</td>
+					<td><a href="https://github.com/savaka2/sbx-files">Repo</a></td>
+					<td><a href="sbx-files/index.html">Page</a></td>
+				</tr>
+				<tr>
+					<td>something</td>
+					<td><a href="https://github.com/savaka2/something">Repo</a></td>
+					<td><a href="something/index.html">Page</a></td>
+				</tr>
+				<tr>
+					<td>scratch-extensions-directory</td>
+					<td><a href="https://github.com/savaka2/scratch-extensions-directory">Repo</a></td>
+					<td><a href="scratch-extensions-directory/index.html">Page</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p><a href="images/lemons-are-good.png" style="color:black;">lemons-are-good</a></p>
+	</div>
+</body>
 </html>

@@ -7,7 +7,7 @@
 	<script>
 		function doIt() {
 			var date = Date();
-			var end = date.substring(0,3) + ', ' + date.substring(8,10) + ' ' + date.substring(4,7) + ' ' + date.substring(11,24) + ' ' + date.substring(35,38);
+			var end = date.substring(0,3) + ', ' + date.substring(8,10) + ' ' + date.substring(4,7) + ' ' + date.substring(11,24) + ' ' + 'EST';
 			var para = document.getElementById('result');
 			para.innerHTML = end;
 		};
@@ -19,6 +19,7 @@
 	</div>
 	<div id="main">
 	<h1>RSS date generator</h1>
+	<p>Assuming EST</p>
 	<button onclick="doIt();">go</button>
 	<p id="result"></p>
 	</div>

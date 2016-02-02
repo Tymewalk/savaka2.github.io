@@ -52,4 +52,8 @@ window.onload = function() {
 		item.innerHTML = ss_more[i];
 		list_more.appendChild(item);
 	}
+	
+	if (loadFunc != undefined) {
+		loadFunc();
+	}
 };

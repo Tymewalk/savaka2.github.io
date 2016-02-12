@@ -64,7 +64,7 @@ window.onload = function() {
 		list_more.appendChild(item);
 	}
 	
-	if (loadFunc != undefined) {
+	if (typeof loadFunc !== 'undefined') {
 		loadFunc();
 	}
 };

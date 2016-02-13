@@ -62,3 +62,7 @@ td {
 .mono {
 	font-family: monospace;
 }
+
+#paste-filename {
+	display: none;
+}

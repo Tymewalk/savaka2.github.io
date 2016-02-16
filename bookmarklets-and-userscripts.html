@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="savaka-style.css">
-		<title>Mini-bookmarklets and Userscripts - Savaka's GitHub Page</title>
-		<script src="siteswitcherscript.js"></script>
-	</head>
-	<body>
-		<div id="header">
-		<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <a href="index.html"><img src="images/home-button.png"></a><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
-		</div>
-		<div id="siteswitcher" style="display:none;">
-		<h1>Switch Site</h1>
-		<p>GitHub projects:</p>
-		<ul>
-			<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
-			<li><a href="ext-open/index.html">Ext Open</a></li>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="savaka-style.css">
+	<title>Mini-bookmarklets and Userscripts - Savaka's GitHub Page</title>
+	<script src="siteswitcherscript.js"></script>
+</head>
+<body>
+	<header>
+	<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <a href="index.html"><img src="images/home-button.png"></a><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
+	</header>
+	<div id="siteswitcher" style="display:none;">
+	<h1 id="ss-home">Switch Site</h1>
+	<p>GitHub projects:</p>
+	<ul id="ssProjects">
+	</ul>
+	<p><a href="javascript:showMore();">Show more</a></p>
+	<div id="morepages" style="display:none">
+		<ul id="ssMore">
 		</ul>
-		<p><a href="javascript:showMore();">Show more</a></p>
-		<div id="morepages" style="display:none">
-			<ul>
-				<li><a href="sbx-files/index.html">SBX Files</a></li>
-				<li><a href="something/index.html">Something</a></li>
-				<li><a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a></li>
-			</ul>
-		</div>
-		<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
-		</div>
-		<div id="main">
-		<h1>Bookmarklets and Userscripts</h1>
-		<h2>Bookmarklets</h2>
-		<p>Only mini-bookmarklets are listed, which means bookmarklets that are short in comparison to big bookmarklets like Ext Open, and that I made all at once and did not save a JS file<br/>
-		Drag link to bookmarks bar to install bookmarklet</p>
-		<ul>
-			<li><a href="javascript:(function()%7Bvar%20thing%20%3D%20window.location.href%3Bif%20(thing.substring(0%2C15)%20%3D%3D%20'http%3A%2F%2Fxkcd.com')%20%7Bnewthing%20%3D%20thing.substring(15)%3Bnewthing%20%3D%20'http%3A%2F%2Fexplainxkcd.com'%20%2B%20newthing%3Bwindow.location%20%3D%20newthing%3B%7D%7D)()">xkcd explainer</a> - Goes to the explainxkcd.com explanation of the current xkcd comic for people who are too lazy to type the word "explain"</li>
-		</ul>
-		<p>Bookmarklets generated with <a href="http://mrcoles.com/bookmarklet/">http://mrcoles.com/bookmarklet/</a></p>
-		<h3>Bookmarklets with repos</h3>
-		<p>Click to visit page</p>
-		<ul>
-			<li><a href="ext-open/index.html">Ext Open</a></li>
-		</ul>
-		<h2>Userscripts</h2>
-		<p>Click link to install userscript</p>
-		<ul>
-			<li><a href="userscripts/ScratchX_for_experienced_people.user.js">ScratchX for experienced people</a> - Adds link to start ScratchX without an extension, adds button to go to Unofficial Extensions Directory, hides "Scratch vs ScratchX" and "Who Uses ScratchX" sections</li>
-			<li><a href="userscripts/rickroll.user.js">rickroll</a> - Rickrolls all links</li>
-		</ul>
-		</div>
-	</body>
+	</div>
+	<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
+	</div>
+	<main>
+	<h1>Bookmarklets and Userscripts</h1>
+	<h2>Bookmarklets</h2>
+	<p>Only mini-bookmarklets are listed, which means bookmarklets that are short in comparison to big bookmarklets like Ext Open, and that I made all at once and did not save a JS file<br/>
+	Drag link to bookmarks bar to install bookmarklet</p>
+	<ul>
+		<li><a href="javascript:(function()%7Bvar%20thing%20%3D%20window.location.href%3Bif%20(thing.substring(0%2C15)%20%3D%3D%20'http%3A%2F%2Fxkcd.com')%20%7Bnewthing%20%3D%20thing.substring(15)%3Bnewthing%20%3D%20'http%3A%2F%2Fexplainxkcd.com'%20%2B%20newthing%3Bwindow.location%20%3D%20newthing%3B%7D%7D)()">xkcd explainer</a> - Goes to the explainxkcd.com explanation of the current xkcd comic for people who are too lazy to type the word "explain"</li>
+	</ul>
+	<p>Bookmarklets generated with <a href="http://mrcoles.com/bookmarklet/">http://mrcoles.com/bookmarklet/</a></p>
+	<h3>Bookmarklets with repos</h3>
+	<p>Click to visit page</p>
+	<ul>
+		<li><a href="ext-open/index.html">Ext Open</a></li>
+	</ul>
+	<h2>Userscripts</h2>
+	<p>Click link to install userscript</p>
+	<ul>
+		<li><a href="userscripts/ScratchX_for_experienced_people.user.js">ScratchX for experienced people</a> - Adds link to start ScratchX without an extension, adds button to go to Unofficial Extensions Directory, hides "Scratch vs ScratchX" and "Who Uses ScratchX" sections</li>
+		<li><a href="userscripts/rickroll.user.js">rickroll</a> - Rickrolls all links</li>
+	</ul>
+	</main>
+</body>
 </html>

@@ -18,7 +18,7 @@
 		function start() {
 			var temp = prompt('Enter offset', '0');
 			temp = Number(temp);
-			if (temp != NaN) {
+			if (temp == NaN) {
 				temp = 0;
 			}
 			offset = temp;

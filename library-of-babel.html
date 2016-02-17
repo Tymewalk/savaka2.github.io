@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="savaka-style.css">
+	<title>The Library of Babel - Savaka's GitHub Page</title>
+	<script src="siteswitcherscript.js"></script>
+	<script>
+		function randInt(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		};
+		
+		function libChar() {
+			var symbols = 'abcdefghijlmnoprstuvyz,. ';
+			return symbols.charAt(randInt(0, randInt(0, symbols.length - 1)));
+		};
+		
+		function start() {
+			var temp = prompt('Enter offset', '0');
+			temp = Number(temp);
+			if (temp == NaN) {
+				temp = 0;
+			}
+			offset = temp;
+			var book = document.getElementById('book');
+			book.innerHTML = '';
+			i = 0;
+			generate();
+		}
+		
+		function generate() {
+			var book = document.getElementById('book');
+			var button = document.getElementById('clicky');
+			button.style.display = 'none';
+			var status = document.getElementById('status');
+			status.style.display = 'initial'
+			var page = document.createElement('p');
+			var linechars = 80;
+			for (j = 0; j < 40; j++) {
+				linechars = randInt(80 - offset, 80 + offset);
+				for (k = 0; k < linechars; k++) {
+					page.innerHTML += libChar();
+				}
+				page.innerHTML += '<br/>';
+			}
+			book.appendChild(page);
+			if (i < 409) {
+				i++;
+				status.innerHTML = Math.floor((i / 410) * 100).toString() + '%';
+				setTimeout(function(){ generate() }, 0);
+			} else {
+				status.style.display = 'none';
+				button.style.display = 'initial';
+			}
+		};
+		
+		var i = 0;
+		var offset = 0;
+	</script>
+</head>
+<body>
+	<header>
+	<a href="index.html"><img src="images/savakafull-small.PNG" style="display:inline;"></a><span style="display:inline; font-size:2em; font-weight:bold; vertical-align:50%;"> <a href="javascript:switchSite();">&rarr; Home</a></span> <a href="index.html"><img src="images/home-button.png"></a><a href="https://github.com/savaka2/savaka2.github.io"><img src="images/gh.png" style="display:inline;"></a>
+	</header>
+	<div id="siteswitcher" style="display:none;">
+	<h1 id="ss-home">Switch Site</h1>
+	<p>GitHub projects:</p>
+	<ul id="ssProjects">
+	</ul>
+	<p><a href="javascript:showMore();">Show more</a></p>
+	<div id="morepages" style="display:none">
+		<ul id="ssMore">
+		</ul>
+	</div>
+	<p><a href="javascript:switchSite();">Close siteswitcher</a></p>
+	</div>
+	<main>
+	<h1>The Library of Babel</h1>
+	<h2>Book generator</h2>
+	<p>Read the short story <a href="http://hyperdiscordia.crywalt.com/library_of_babel.html">here</a>.</p>
+	<button id="clicky" onclick="start();">Generate book!</button>
+	<p id="status" style="display:none;"></p>
+	<div id="book"></div>
+	</main>
+</body>
+</html>

@@ -35,8 +35,10 @@
 			var status = document.getElementById('status');
 			status.style.display = 'initial'
 			var page = document.createElement('p');
+			var linechars = 80;
 			for (j = 0; j < 40; j++) {
-				for (k = 0; k < randInt(80 - offset, 80 + offset); k++) {
+				linechars = randInt(80 - offset, 80 + offset);
+				for (k = 0; k < linechars; k++) {
 					page.innerHTML += libChar();
 				}
 				page.innerHTML += '<br/>';

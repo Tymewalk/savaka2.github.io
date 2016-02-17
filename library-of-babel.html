@@ -15,20 +15,45 @@
 			return symbols.charAt(randInt(0, randInt(0, symbols.length - 1)));
 		};
 		
+		function start() {
+			var temp = prompt('Enter offset', '0');
+			temp = Number(temp);
+			if (temp != NaN) {
+				temp = 0;
+			}
+			offset = temp;
+			var book = document.getElementById('book');
+			book.innerHTML = '';
+			i = 0;
+			generate();
+		}
+		
 		function generate() {
 			var book = document.getElementById('book');
-			var page;
-			for (i = 0; i < 410; i++) {
-				page = document.createElement('p');
-				for (j = 0; j < 40; j++) {
-					for (k = 0; k < 80; k++) {
-						page.innerHTML += libChar();
-					}
-					page.innerHTML += '<br/>';
+			var button = document.getElementById('clicky');
+			button.style.display = 'none';
+			var status = document.getElementById('status');
+			status.style.display = 'initial'
+			var page = document.createElement('p');
+			for (j = 0; j < 40; j++) {
+			for (k = 0; k < randInt(80 - offset, 80 + offset); k++) {
+					page.innerHTML += libChar();
 				}
-				book.appendChild(page);
+				page.innerHTML += '<br/>';
+			}
+			book.appendChild(page);
+			if (i < 409) {
+				i++;
+				status.innerHTML = Math.floor((i / 410) * 100).toString() + '%';
+				setTimeout(function(){ generate() }, 0);
+			} else {
+				status.style.display = 'none';
+				button.style.display = 'initial';
 			}
 		};
+		
+		var i = 0;
+		var offset = 0;
 	</script>
 </head>
 <body>
@@ -51,7 +76,8 @@
 	<h1>The Library of Babel</h1>
 	<h2>Book generator</h2>
 	<p>Read the short story <a href="http://hyperdiscordia.crywalt.com/library_of_babel.html">here</a>.</p>
-	<button onclick="generate();">Generate book!</button> <!-- probably will crash brwoser -->
+	<button id="clicky" onclick="start();">Generate book!</button>
+	<p id="status" style="display:none;"></p>
 	<div id="book"></div>
 	</main>
 </body>

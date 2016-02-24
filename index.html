@@ -13,6 +13,12 @@
 				document.getElementById('repoTable').style.display = 'initial';
 			}
 		}
+		
+		function loadFunc() {
+			var proj = document.getElementById('gh-proj');
+			var ssProj = document.getElementById('ssProjects');
+			proj.innerHTML = ssProj.innerHTML;
+		}
 	</script>
 </head>
 <body>
@@ -45,9 +51,7 @@
 		<li><a href="https://www.touchdevelop.com/app/jxyba">Touch Develop</a></li>
 	</ul>
 	<p>GitHub projects:</p>
-	<ul>
-		<li><a href="scratch-extensions/index.html">Scratch Extensions</a></li>
-		<li><a href="ext-open/index.html">Ext Open</a></li>
+	<ul id="gh-proj">
 	</ul>
 	<p><a href="bookmarklets-and-userscripts.html">Bookmarklets and userscripts</a></p>
 	<p><a href="javascript:showTable();">Show complete repo link table (sources only)</a></p>

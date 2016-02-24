@@ -24,8 +24,7 @@ window.onload = function() {
 		var ss_more = [
 			'<a href="../../sbx-files/index.html">SBX Files</a>',
 			'<a href="../../something/index.html">Something</a>',
-			'<a href="../../scratch-extensions-directory/index.html">Scratch Extensions Directory</a>',
-			'<a href="../../blog/index.html">Blog</a>'
+			'<a href="../../scratch-extensions-directory/index.html">Scratch Extensions Directory</a>'
 		];
 	} else if (document.getElementById('ss-home') != null) {
 		var ss_projects = [
@@ -35,8 +34,7 @@ window.onload = function() {
 		var ss_more = [
 			'<a href="sbx-files/index.html">SBX Files</a>',
 			'<a href="something/index.html">Something</a>',
-			'<a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a>',
-			'<a href="blog/index.html">Blog</a>'
+			'<a href="scratch-extensions-directory/index.html">Scratch Extensions Directory</a>'
 		];
 	} else {
 		var ss_projects = [
@@ -46,8 +44,7 @@ window.onload = function() {
 		var ss_more = [
 			'<a href="../sbx-files/index.html">SBX Files</a>',
 			'<a href="../something/index.html">Something</a>',
-			'<a href="../scratch-extensions-directory/index.html">Scratch Extensions Directory</a>',
-			'<a href="../blog/index.html">Blog</a>'
+			'<a href="../scratch-extensions-directory/index.html">Scratch Extensions Directory</a>'
 		];
 	}
 	var list_projects = document.getElementById('ssProjects');

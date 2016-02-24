@@ -1,4 +1,4 @@
-function showMore() {
+function showMore() { 
 	if (document.getElementById('morepages').style.display == 'initial') {
 		document.getElementById('morepages').style.display = 'none';
 	} else {
